@@ -1,0 +1,17 @@
+seed: 42
+text_max_features: 100000
+test_size_validation: 0.15
+label_positive: Fake
+model_selection_metric: macro_f1
+default_models:
+  - dummy
+  - naive_bayes
+  - logistic_regression
+  - linear_svm
+dataset:
+  name: ViFN Version 1
+  train_file: data/raw/train_data.csv
+  test_file: data/raw/test_data.csv
+  source: https://github.com/huynhtuan0106/ViFN-Vietnamese_Fake_New_Datasets_Ver1
+  paper: https://doi.org/10.3837/tiis.2025.02.006
+

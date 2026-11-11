@@ -1,0 +1,48 @@
+{
+  "accuracy": 0.8534798534798534,
+  "precision_macro": 0.8568376068376069,
+  "recall_macro": 0.8506136950904393,
+  "f1_macro": 0.8520325203252033,
+  "precision_fake": 0.8803418803418803,
+  "recall_fake": 0.7984496124031008,
+  "f1_fake": 0.8373983739837398,
+  "roc_auc": 0.9312015503875969,
+  "selected_model": "logistic_regression",
+  "seed": 42,
+  "test_rows": 273,
+  "train_rows_after_dedup_and_decontamination": 924,
+  "raw_train_rows": 1124,
+  "train_duplicate_rows_removed": 136,
+  "train_test_overlap_texts_removed_from_train": 64,
+  "raw_test_rows": 282,
+  "test_duplicate_rows_removed": 9,
+  "test_exact_overlap_with_train_after_cleaning": 0,
+  "warning": "Test metrics are only valid if the dataset split is independent and labels are reliable.",
+  "classification_report": {
+    "Real": {
+      "precision": 0.8333333333333334,
+      "recall": 0.9027777777777778,
+      "f1-score": 0.8666666666666667,
+      "support": 144.0
+    },
+    "Fake": {
+      "precision": 0.8803418803418803,
+      "recall": 0.7984496124031008,
+      "f1-score": 0.8373983739837398,
+      "support": 129.0
+    },
+    "accuracy": 0.8534798534798534,
+    "macro avg": {
+      "precision": 0.8568376068376069,
+      "recall": 0.8506136950904393,
+      "f1-score": 0.8520325203252033,
+      "support": 273.0
+    },
+    "weighted avg": {
+      "precision": 0.8555461632384709,
+      "recall": 0.8534798534798534,
+      "f1-score": 0.852836594300009,
+      "support": 273.0
+    }
+  }
+}

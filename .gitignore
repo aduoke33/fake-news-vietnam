@@ -1,0 +1,47 @@
+# Dữ liệu thô (tuân thủ bản quyền ViFN, tải riêng theo hướng dẫn trong README)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Mô hình nhị phân nặng (>1.5MB, sinh lại bằng: python -m src.project train)
+models/*.joblib
+!models/.gitkeep
+!models/model_metadata.json
+
+# Kết quả và chỉ số thực nghiệm
+outputs/metrics/*
+!outputs/metrics/
+!outputs/metrics/eda_summary.json
+!outputs/metrics/validation_comparison.csv
+!outputs/metrics/test_metrics.json
+!outputs/metrics/validation_*.json
+# Không commit test_predictions.csv vì chứa toàn bộ văn bản của dataset
+outputs/metrics/test_predictions.csv
+!outputs/figures/
+!outputs/figures/*.png
+
+# LaTeX auxiliary files (chỉ giữ file nguồn main.tex, figures, README.txt và PDF)
+report/*.aux
+report/*.log
+report/*.out
+report/*.toc
+report/*.lof
+report/*.lot
+
+# Python / Environment / IDE
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.streamlit/
+.runtime-packages/
+.pip-cache/
+.pip-temp/
+.chart-data-*/
+.build_pptx/
+.vscode/
+.idea/
+*.swp
+*.bak
+

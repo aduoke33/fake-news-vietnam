@@ -1,0 +1,9 @@
+{
+  "selected_model": "logistic_regression",
+  "labels": [
+    "Fake",
+    "Real"
+  ],
+  "input": "text",
+  "seed": 42
+}
